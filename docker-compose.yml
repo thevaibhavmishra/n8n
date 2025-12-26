@@ -10,8 +10,8 @@ services:
     environment:
       - N8N_PORT=5678
       - N8N_PROTOCOL=https
-      - N8N_HOST=trimorphous-nonacoustically-halley.ngrok-free.dev
-      - WEBHOOK_URL=https://trimorphous-nonacoustically-halley.ngrok-free.dev
+      - N8N_HOST=N8N_HOST
+      - WEBHOOK_URL=WEBHOOK_URL
       - NODE_ENV=production
     depends_on:
       - ngrok
@@ -22,4 +22,4 @@ services:
     restart: unless-stopped
     command: http n8n:5678
     environment:
-      - NGROK_AUTHTOKEN="37LD184jLtVv45BT3m9iZtHzplZ_4krjVWFBDxHg8cBVRMD1r"
+      - NGROK_AUTHTOKEN=NGROK_AUTHTOKEN
